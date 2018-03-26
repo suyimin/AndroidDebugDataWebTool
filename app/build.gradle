@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.itgowo.tool.android_debugdata_webtool"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:25.+'
+
+//    debugcompile 'com.itgowo:android-WebDebugTool:1.0.6'
+    debugImplementation 'com.itgowo:android-WebDebugTool:1.0.6'
+//    api 'com.itgowo:android-WebDebugTool:1.0.6'
+//    compile project(':webtoollibrary')
+//    compile 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+}
