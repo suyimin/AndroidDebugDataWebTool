@@ -1,11 +1,5 @@
-# android_debugdata_webtool
+# AndroidDebugDataWebTool
 android debug database SharedPreference 查看并修改手机数据库和共享参数的工具，优化了amitshekhar工程的好多细节功能和代码
-
-http://itgowo.com
-
-QQ:1264957104
-
-Email:lujianchao@itgowo.com
 
 ## 前辈版本 Github：https://github.com/amitshekhariitbhu/Android-Debug-Database
 大家可以去膜拜一下前辈
